@@ -5,6 +5,8 @@ newNode.innterHTML = "I've been put here by JavaScript!";
 newNode.style.backgroundColor = "#f9f9f9";
 newNode.style.textAlign = "center";
 
+document.body.appendChild(newNode);
+
 var ul = document.createElement("ul")
 
 for (let i = 0; i < 3; i++) {
@@ -13,4 +15,4 @@ for (let i = 0; i < 3; i++) {
     ul.appendChild(li);
 }
 
-element.appendChild(ul);
+newNode.appendChild(ul);
